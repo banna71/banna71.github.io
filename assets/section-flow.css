@@ -91,3 +91,9 @@ body:not(.home-page) .contact-box{background:#fbf7f2;border-color:#eadfd7}
  .navlinks a[href="index.html#home"],.navlinks a[href="cv.html"]{display:none!important}
  .navlinks .contact{padding:2px 4px!important;border-radius:999px}
 }
+
+/* Keep internal pages white, with a soft warm glow behind the text */
+body:not(.home-page) main>.section:not(.profile-showcase){background:#fff!important;overflow:hidden}
+body:not(.home-page) main>.section:not(.profile-showcase)::before{content:"";position:absolute;z-index:0;pointer-events:none;top:0;left:-12%;width:min(62vw,680px);height:min(560px,85%);border-radius:50%;background:radial-gradient(ellipse at 42% 42%,rgba(244,230,216,.58) 0%,rgba(244,230,216,.3) 36%,rgba(244,230,216,.11) 58%,rgba(244,230,216,0) 76%)}
+body:not(.home-page) main>.section:not(.profile-showcase)>.wrap{position:relative;z-index:1}
+@media(max-width:600px){body:not(.home-page) main>.section:not(.profile-showcase)::before{left:-32%;top:2%;width:115vw;height:360px}}
