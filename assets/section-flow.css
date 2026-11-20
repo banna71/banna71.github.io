@@ -97,3 +97,12 @@ body:not(.home-page) main>.section:not(.profile-showcase){background:#fff!import
 body:not(.home-page) main>.section:not(.profile-showcase)::before{content:"";position:absolute;z-index:0;pointer-events:none;top:0;left:-12%;width:min(62vw,680px);height:min(560px,85%);border-radius:50%;background:radial-gradient(ellipse at 42% 42%,rgba(244,230,216,.58) 0%,rgba(244,230,216,.3) 36%,rgba(244,230,216,.11) 58%,rgba(244,230,216,0) 76%)}
 body:not(.home-page) main>.section:not(.profile-showcase)>.wrap{position:relative;z-index:1}
 @media(max-width:600px){body:not(.home-page) main>.section:not(.profile-showcase)::before{left:-32%;top:2%;width:115vw;height:360px}}
+
+
+/* Keep CV out of the shared navigation; use Home instead of the monogram on phones */
+.navlinks a[href="cv.html"]{display:none!important}
+@media(max-width:600px){
+ .nav>.brand{display:none!important}
+ .nav>.navlinks{width:100%;flex:1 1 100%;justify-content:space-between;gap:0}
+ .navlinks a[href="index.html#home"]{display:inline-block!important}
+}
