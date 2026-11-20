@@ -106,3 +106,12 @@ body:not(.home-page) main>.section:not(.profile-showcase)>.wrap{position:relativ
  .nav>.navlinks{width:100%;flex:1 1 100%;justify-content:space-between;gap:0}
  .navlinks a[href="index.html#home"]{display:inline-block!important}
 }
+
+
+/* Desktop: a localized warm bubble at the side of internal-page text */
+body:not(.home-page),body:not(.home-page) main{background:#fff!important}
+body:not(.home-page) main>.section:not(.profile-showcase){background:#fff!important;overflow:hidden}
+body:not(.home-page) main>.section:not(.profile-showcase)::before{content:"";position:absolute;z-index:0;pointer-events:none;top:12px;right:-125px;left:auto;width:min(54vw,620px);height:min(470px,88%);border-radius:50%;background:radial-gradient(ellipse at 48% 46%,rgba(244,230,216,.72) 0%,rgba(248,242,237,.48) 43%,rgba(248,242,237,.18) 65%,rgba(248,242,237,0) 80%)}
+body:not(.home-page) main>.section:not(.profile-showcase)>.wrap{position:relative;z-index:1}
+@media(min-width:601px){.home-page .role-item strong{font-size:15px!important}.home-page .role-item a,.home-page .role-item div>span{font-size:13px!important}}
+@media(max-width:600px){body:not(.home-page) main>.section:not(.profile-showcase)::before{display:none!important}}
