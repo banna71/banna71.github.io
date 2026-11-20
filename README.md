@@ -1,21 +1,13 @@
 # Hasan Al Banna — Academic Website
 
-A responsive, single-page academic website published with GitHub Pages.
+A responsive, white-background academic website published with GitHub Pages.
 
-## Sections
+## Site sections
 
-- Home
-- About
-- Research
-- Publications
-- Teaching
-- CV
-- Contact
+Home, About, Research, Publications, Teaching, CV, and Contact.
 
-The profile information is based on Hasan Al Banna’s [Policy Research Institute profile](https://www.pri-bd.org/member/hasan-al-banna/). Publication citations are linked to the profile and PRI archive until individual authorship and bibliographic details are confirmed. The CV section will be updated when an approved PDF is available.
+The profile and professional details are based on Hasan's revised CV and his [Policy Research Institute profile](https://www.pri-bd.org/member/hasan-al-banna/). Manuscripts under review are identified as such. The downloadable CV and profile photo are stored in `assets/`.
 
 ## GitHub Pages
 
-The site is served from `index.html` at the root of the `main` branch. The Pages deployment for the latest homepage update completed successfully.
-
-Website: https://banna302.github.io/
+The site is served from `index.html` at the root of the `main` branch. The repository uses the account's default Pages domain.
