@@ -79,3 +79,15 @@ body:not(.home-page) main>.section:not(.profile-showcase){background:radial-grad
 body:not(.home-page) .teaching-note,body:not(.home-page) .callout{background:#fbf5ef;border-left-color:#d6b6a2}
 body:not(.home-page) .contact-box{background:#fbf7f2;border-color:#eadfd7}
 @media(max-width:600px){.home-page .portrait-label{display:none}}
+
+
+/* Compact mobile header: logo and page links share one aligned row */
+@media(max-width:600px){
+ .nav{flex-direction:row!important;align-items:center!important;justify-content:space-between;gap:8px!important;min-height:58px;padding:7px 0!important}
+ .nav>.brand{flex:0 0 34px;width:34px!important;height:34px!important;min-width:34px;min-height:34px}
+ .nav>.brand .brand-logo{width:34px;height:34px}
+ .nav>.navlinks{flex:1 1 auto;width:auto;min-width:0;max-width:none;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:0;padding:0;overflow:visible!important}
+ .navlinks a{font-size:clamp(8px,2.55vw,10px)!important;line-height:1.2;letter-spacing:0!important;white-space:nowrap!important}
+ .navlinks a[href="index.html#home"],.navlinks a[href="cv.html"]{display:none!important}
+ .navlinks .contact{padding:2px 4px!important;border-radius:999px}
+}
