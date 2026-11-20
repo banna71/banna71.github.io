@@ -39,3 +39,5 @@ body,main{max-width:100%;overflow-x:clip}
 @keyframes profile-photo-fade{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 .hero .portrait{animation:profile-photo-fade .9s ease-out .12s both}
 @media(prefers-reduced-motion:reduce){.hero .portrait{animation:none}}
+
+@media(max-width:600px){.hero .portrait{max-width:270px!important;justify-self:center}}
