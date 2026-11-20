@@ -1,36 +1,21 @@
 # Hasan Al Banna — Academic Website
 
-A responsive, modern academic portfolio built with plain HTML and CSS. It can be hosted free on GitHub Pages.
+A responsive, single-page academic website published with GitHub Pages.
 
-## 1. Personalise before publishing
-- Replace `assets/profile-placeholder.svg` with your own professional photo (name it `profile.jpg` and update the image filename in `index.html`).
-- Replace `YOUR-EMAIL@example.com` with your public professional email.
-- Replace `YOUR-LINKEDIN` with your LinkedIn profile slug.
-- Add your latest CV as `assets/Hasan_Al_Banna_CV.pdf`.
-- Verify all publication titles, dates, co-authors and links. Add missing DOI/article links.
-- Add or remove content so every statement is accurate and current.
+## Sections
 
-## 2. Create a free GitHub account
-Go to https://github.com/ and create an account. Choose a professional username. Your free website URL will be:
-`https://YOUR-USERNAME.github.io`
+- Home
+- About
+- Research
+- Publications
+- Teaching
+- CV
+- Contact
 
-## 3. Create the website repository
-Create a **public** repository named exactly:
-`YOUR-USERNAME.github.io`
-Replace YOUR-USERNAME with your GitHub username. Upload all files and folders from this package to the repository root (not the ZIP file itself).
+The profile information is based on Hasan Al Banna’s [Policy Research Institute profile](https://www.pri-bd.org/member/hasan-al-banna/). Publication citations are linked to the profile and PRI archive until individual authorship and bibliographic details are confirmed. The CV section will be updated when an approved PDF is available.
 
-## 4. Publish
-For a simple HTML site, GitHub Pages can publish directly:
-1. Open the repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/(root)**, then Save.
-5. Wait a few minutes and visit `https://YOUR-USERNAME.github.io`.
+## GitHub Pages
 
-Official guide: https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site
+The site is served from `index.html` at the root of the `main` branch. The Pages deployment for the latest homepage update completed successfully.
 
-## 5. Update later
-Edit `index.html` in GitHub, commit the change, and GitHub Pages will republish the site. Keep a backup of your files.
-
-## Important
-This is a public website. Do not publish private phone numbers, home address, confidential research, unpublished data, or documents you do not have permission to share. GitHub Pages on the free plan requires a public repository for this setup.
+Website: https://banna302.github.io/
