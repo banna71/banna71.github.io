@@ -28,3 +28,6 @@ body,main{max-width:100%;overflow-x:clip}
 .email-contact{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}
 .email-contact span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .email-contact a{font-size:12px;color:var(--blue);text-underline-offset:3px}
+
+/* Let the header scroll away with the page on every screen */
+.header{position:static!important;top:auto!important;z-index:auto!important}
