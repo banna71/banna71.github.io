@@ -71,3 +71,5 @@ main>.section.profile-showcase{position:relative;isolation:isolate;background:li
 }
 
 @media(max-width:600px){.home-page h1{font-size:clamp(32px,9.4vw,43px)}.home-page .portrait-label{font-size:6px;padding:5px 6px;letter-spacing:.02em}}
+
+@media(max-width:600px){.home-page .hero-title,.home-page .hero-portrait{align-self:center}.home-page h1{font-size:clamp(34px,10.2vw,46px)}.home-page .eyebrow{font-size:7px;letter-spacing:.06em;line-height:1.4}}
