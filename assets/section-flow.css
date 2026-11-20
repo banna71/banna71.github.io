@@ -31,3 +31,6 @@ body,main{max-width:100%;overflow-x:clip}
 
 /* Let the header scroll away with the page on every screen */
 .header{position:static!important;top:auto!important;z-index:auto!important}
+
+/* Keep the complete mobile navigation on one row */
+@media(max-width:600px){.navlinks{width:100%;max-width:100%;flex-wrap:nowrap;justify-content:space-between;gap:2px;overflow:visible!important}.navlinks a{font-size:clamp(9px,2.9vw,10px)!important;white-space:nowrap!important}.navlinks a[href="index.html#home"]{display:none}.navlinks .contact{padding:2px 4px}}
