@@ -1,0 +1,12 @@
+/* Soft section rhythm and restrained motion across the profile */
+:root{--flow-paper:#f5f8f9;--flow-blue:rgba(191,215,226,.28)}
+main>.section{position:relative;isolation:isolate;border-bottom:0!important;transition:background-color .35s ease}
+main>.section:nth-of-type(even){background:radial-gradient(ellipse at 10% 8%,var(--flow-blue),transparent 42%),linear-gradient(125deg,#f7f9fa 0%,#fbfcfc 70%,#fff 100%)}
+main>.section:nth-of-type(even)::before{content:"";position:absolute;z-index:-1;pointer-events:none;width:min(34vw,420px);height:min(34vw,420px);right:-10vw;top:-18%;border-radius:50%;background:radial-gradient(circle,rgba(198,219,228,.16),rgba(198,219,228,0) 70%)}
+.section-flow-in{opacity:0;transform:translateY(18px);transition:opacity .72s ease,transform .72s cubic-bezier(.2,.72,.22,1);transition-delay:var(--flow-delay,0ms)}
+.section-flow-in.is-visible{opacity:1;transform:translateY(0)}
+.project,.research-row,.publication,.feature-link,.gallery-card{transition:transform .28s ease,box-shadow .28s ease,background-color .28s ease,border-color .28s ease}
+.project:hover,.research-row:hover,.publication:hover{transform:translateY(-2px)}
+.project:hover h3,.research-row:hover h3,.publication:hover h3{color:var(--blue)}
+@media(max-width:600px){main>.section:nth-of-type(even)::before{width:230px;height:230px;right:-95px;top:-4%}}
+@media(prefers-reduced-motion:reduce){main>.section,.section-flow-in,.project,.research-row,.publication,.feature-link,.gallery-card{transition:none!important}.section-flow-in{opacity:1;transform:none}}
