@@ -12,6 +12,9 @@ main>.section:nth-of-type(even)::before{content:"";position:absolute;z-index:-1;
 @media(prefers-reduced-motion:reduce){main>.section,.section-flow-in,.project,.research-row,.publication,.feature-link,.gallery-card{transition:none!important}.section-flow-in{opacity:1;transform:none}}
 
 
-/* HAB monogram mark */
+
+/* HAB monogram and slow ambient motion */
 .brand{width:42px!important;height:42px!important;min-width:42px;min-height:42px;border:0!important;border-radius:0!important;padding:0;display:inline-flex!important;align-items:center;justify-content:center;text-decoration:none!important;color:var(--ink)!important;white-space:nowrap}
-.brand-logo{display:block;width:42px;height:42px;object-fit:contain}
+.brand-logo{display:block;width:42px;height:42px;object-fit:contain;transform-origin:center;animation:hab-drift 7s ease-in-out infinite}
+@keyframes hab-drift{0%,100%{transform:translateY(0);filter:drop-shadow(0 0 0 rgba(47,83,104,0))}50%{transform:translateY(-2px);filter:drop-shadow(0 4px 5px rgba(47,83,104,.15))}}
+@media(prefers-reduced-motion:reduce){.brand-logo{animation:none}}
