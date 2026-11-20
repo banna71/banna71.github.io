@@ -10,3 +10,9 @@ main>.section:nth-of-type(even)::before{content:"";position:absolute;z-index:-1;
 .project:hover h3,.research-row:hover h3,.publication:hover h3{color:var(--blue)}
 @media(max-width:600px){main>.section:nth-of-type(even)::before{width:230px;height:230px;right:-95px;top:-4%}}
 @media(prefers-reduced-motion:reduce){main>.section,.section-flow-in,.project,.research-row,.publication,.feature-link,.gallery-card{transition:none!important}.section-flow-in{opacity:1;transform:none}}
+
+/* Compact HAB wordmark with a clear research and teaching identity */
+.brand{width:auto!important;height:auto!important;border:0!important;border-radius:0!important;display:inline-flex!important;align-items:center;gap:10px;color:var(--ink)!important;text-decoration:none!important;white-space:nowrap}
+.brand-mark{display:grid;place-items:center;width:39px;height:39px;border:1px solid #c9d4da;border-radius:4px;color:var(--blue);font:700 10px/1 var(--sans);letter-spacing:.08em;position:relative}
+.brand-mark::after{content:"";position:absolute;left:7px;right:7px;bottom:6px;height:1px;background:#b5c7d1}
+.brand-copy{font:700 8px/1.35 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
