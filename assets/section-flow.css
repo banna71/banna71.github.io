@@ -19,10 +19,12 @@ main>.section:nth-of-type(even)::before{content:"";position:absolute;z-index:-1;
 @keyframes hab-drift{0%,100%{transform:translateY(0);filter:drop-shadow(0 0 0 rgba(47,83,104,0))}50%{transform:translateY(-2px);filter:drop-shadow(0 4px 5px rgba(47,83,104,.15))}}
 @media(prefers-reduced-motion:reduce){.brand-logo{animation:none}}
 
-/* Prevent the decorative section glow from widening the viewport */
-html,body,main{max-width:100%;overflow-x:clip}
 
-/* Keep the contact channels together, with email below social links */
-.email-contact{display:flex;flex-direction:column;align-items:flex-start;gap:2px;margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}
+/* Keep the page and compact navigation from scrolling sideways */
+html{max-width:100%;overflow-x:hidden}
+body,main{max-width:100%;overflow-x:clip}
+@media(max-width:820px){.navlinks{width:100%;max-width:100%;overflow:visible!important;flex-wrap:wrap;gap:8px 18px;padding-bottom:0}.navlinks a{white-space:normal!important}}
+/* Keep email visually separated from its prompt */
+.email-contact{display:flex;flex-direction:column;align-items:flex-start;gap:7px;margin-top:13px;padding-top:11px;border-top:1px solid var(--line)}
 .email-contact span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .email-contact a{font-size:12px;color:var(--blue);text-underline-offset:3px}
